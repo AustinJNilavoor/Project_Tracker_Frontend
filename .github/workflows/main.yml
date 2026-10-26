@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --base=/Project_Tracker_Frontend/
+        run: npm run build
 
       # Single-page apps on GitHub Pages need a 404 fallback for client-side routing
       - name: Add SPA fallback and .nojekyll
