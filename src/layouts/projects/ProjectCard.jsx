@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../hooks/useAuth';
 import milestoneService from '../../services/milestoneServices';
 import projectMemberService from '../../services/membersServices'; // Import member service
 import UserAvatar from '../../components/UserAvatar'; // Import global avatar

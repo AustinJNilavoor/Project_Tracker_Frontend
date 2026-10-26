@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import projectService from '../services/projectServices';
 import userService from '../services/userServices';
 import projectMemberService from '../services/membersServices'; // Import member service
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 
 export const useManagerDashboard = () => {
     const { user } = useAuth();

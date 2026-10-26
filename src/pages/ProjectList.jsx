@@ -12,7 +12,7 @@ import AddProjectModal from '../modals/AddProjectModal';
 
 // Logic Hook
 import { useProjectList } from '../hooks/useProjectList';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 
 // Styles
 import '../styles/ProjectList.css';

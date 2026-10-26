@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './context/AuthContext';
+import { AuthProvider} from './context/AuthContext';
+import {useAuth} from './hooks/useAuth.js'
 import Login from './pages/Login.jsx';
 import AdminDashboard from './pages/AdminDashboard.jsx';
 import ManagerDashboard from './pages/ManagerDashboard.jsx';

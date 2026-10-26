@@ -4,7 +4,7 @@ import { jwtDecode } from 'jwt-decode'; // Assuming this dependency is available
 import api from '../services/api'; // Import the axios instance
 
 // Define AuthContext outside the component
-const AuthContext = createContext(null);
+export const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -87,6 +87,6 @@ const login = (authResponse) => {
 };
 
 // Export the hook for easy consumption
-export const useAuth = () => {
-  return useContext(AuthContext);
-};
+// export const useAuth = () => {
+//   return useContext(AuthContext);
+// };

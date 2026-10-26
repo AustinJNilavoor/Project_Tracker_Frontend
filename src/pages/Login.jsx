@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 import authService from '../services/authServices'; // Corrected filename to standard convention
 import { useNavigate } from 'react-router-dom';
 import { Eye, EyeOff } from 'lucide-react'; // Import icons for password toggle
@@ -126,7 +126,7 @@ const Login = () => {
                                     disabled={loading}
                                 />
                                 <button type="button" className="password-toggle" onClick={() => setShowPassword(!showPassword)}>
-                                    {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                                    {!showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
                                 </button>
                             </div>
                         </div>

@@ -1,0 +1,116 @@
+/* InProgressTasksWidget.css */
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; Ensures the container takes available height */
+}
+
+.phase-info {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.phase-name {
+    font-weight: 600;
+    color: #334155;
+}
+
+.widget-content {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+/* Loading and Empty States */
+.status-message {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    padding: 1rem 0;
+}
+
+.status-message.empty {
+    font-style: italic;
+}
+
+/* Task List */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Task Item */
+.task-item {
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px dashed #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+    border-radius: 6px;
+}
+
+.task-item:hover {
+    background-color: #f8fafc;
+}
+
+.task-item-details {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    overflow: hidden;
+}
+
+.task-item-title {
+    font-size: 0.85rem;
+    color: #334155;
+    line-height: 1.4;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s ease;
+}
+
+.task-item:hover .task-item-title {
+    color: #1e293b;
+}
+
+.task-item-chevron {
+    flex-shrink: 0;
+    color: #94a3b8;
+    transition: color 0.2s ease;
+}
+
+.task-item:hover .task-item-chevron {
+    color: #3b82f6;
+}
+
+/* Navigation Button */
+.navigate-btn {
+    width: 100%;
+    margin-top: auto; /* Pushes button to the bottom */
+    padding: 0.6rem;
+    background: #fff;
+    border: 1px solid #3b82f6;
+    border-radius: 6px;
+    color: #3b82f6;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.navigate-btn:hover {
+    background: #eff6ff;
+}

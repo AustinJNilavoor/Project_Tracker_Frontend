@@ -191,7 +191,7 @@
 /* Mobile Adjustments */
 @media (max-width: 640px) {
     .kanban-board {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
     }
 
     .task-board-wrapper {

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // IMPORTANT: Set this to the base URL of your Spring Boot backend
-const API_BASE_URL = 'http://localhost:8080/api'; 
+const API_BASE_URL = 'https://project-tracker-backend-99zy.onrender.com/api'; 
 
 const api = axios.create({
   baseURL: API_BASE_URL,

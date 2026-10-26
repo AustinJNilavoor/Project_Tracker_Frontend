@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth } from '../context/AuthContext.jsx';
+import { useAuth } from '../hooks/useAuth';
 import { Briefcase, Plus, LogOut, Search, Settings } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Header.css';

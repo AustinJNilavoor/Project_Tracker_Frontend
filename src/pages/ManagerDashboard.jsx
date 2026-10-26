@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 import '../styles/ManagerDashboard.css';
 import { formatDayMonth } from '../utils/dateFormater';
 

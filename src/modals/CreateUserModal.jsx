@@ -25,6 +25,7 @@ const CreateUserModal = ({ onClose, onSuccess, ibuOptions, userToEdit = null }) 
                 role: userToEdit.role || 'EMPLOYEE',
                 ibuName: userToEdit.ibuName || ''
             });
+            
         }
     }, [userToEdit]);
 
@@ -46,7 +47,7 @@ const CreateUserModal = ({ onClose, onSuccess, ibuOptions, userToEdit = null }) 
             if (isEditMode) {
                 // Filter out empty password so we don't overwrite it with blank
                 const updatePayload = { ...formData };
-                if (!updatePayload.password) delete updatePayload.password;
+                console.log(updatePayload.ibuName)
 
                 await userService.updateUser(userToEdit.id, updatePayload);
             } else {
